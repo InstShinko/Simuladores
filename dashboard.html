@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Simulador Académico - Dashboard</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="dashboard.css"/>
+
+</head>
+<body>
+<div class="app-layout">
+    <!-- SIDEBAR DE NAVEGACIÓN JERÁRQUICA -->
+    <aside class="sidebar">
+        <!-- Info del usuario -->
+        <div class="user-info" id="userInfo">
+            <div class="user-details">
+                <div class="user-avatar">👤</div>
+                <div>
+                    <div class="user-email" id="userEmail">Cargando...</div>
+                    <div class="user-role">Estudiante</div>
+                </div>
+            </div>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </div>
+
+        <div class="sidebar-header">
+            <h2>📚 Navegación</h2>
+            <p class="sub">Selecciona trimestre, materia y actividad</p>
+        </div>
+
+        <!-- Pestañas de trimestres -->
+        <div class="trimestres-nav" id="trimestresNav">
+            <!-- Se generará dinámicamente con JS -->
+        </div>
+
+        <!-- Contenedor de materias (se llena dinámicamente) -->
+        <div class="materias-container" id="materiasContainer">
+            <!-- Las materias se cargan aquí según el trimestre -->
+        </div>
+
+        <!-- Info del simulador actual -->
+        <div class="current-simulator-info" id="currentSimulatorInfo">
+            <div class="current-simulator-title" id="currentSimTitle">Selecciona una actividad</div>
+            <div class="current-simulator-sub" id="currentSimPath">Trimestre → Materia → Módulo → Actividad</div>
+        </div>
+    </aside>
+
+    <!-- CONTENEDOR PRINCIPAL DEL SIMULADOR -->
+    <main class="main-content">
+        <!-- Breadcrumb de navegación -->
+        <div class="breadcrumb" id="breadcrumb">
+            📍 <span id="breadTrimestre">Trimestre 1</span> → 
+            <span id="breadMateria">Química I</span> → 
+            <span id="breadModulo">Módulo 1</span> → 
+            <span id="breadActividad">Actividad 1</span>
+        </div>
+
+        <section class="card" id="simulador-container">
+            <header>
+                <h1 id="materia-titulo">Química I - Módulo 1: La Química como Ciencia</h1>
+                <p class="sub" id="materia-descripcion">Actividad 1: Conceptos básicos de química</p>
+                <div class="meta">
+                    <span class="pill" id="modo-info">Modo: Práctica</span>
+                    <span class="pill" id="preguntas-info">Preguntas: 10</span>
+                    <span class="pill" id="banco-info">Duración: 30 min</span>
+                </div>
+                <div class="row">
+                    <div class="progress"><div class="bar" id="bar"></div></div>
+                    <div class="pill" id="counter">0 / 0</div>
+                </div>
+            </header>
+
+            <div class="qhead">
+                <p class="qtitle" id="qtitle">Selecciona una actividad para comenzar</p>
+                <div class="options" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+                <div class="btns">
+                    <button class="primary" id="startBtn" disabled>Iniciar actividad</button>
+                    <button id="checkBtn" disabled>Comprobar</button>
+                    <button id="nextBtn" disabled>Siguiente</button>
+                    <button id="restartBtn" disabled>Reiniciar</button>
+                </div>
+            </div>
+        </section>
+
+        <aside class="card side" id="marcador-container">
+            <h2>Marcador</h2>
+            <div class="stats">
+                <div class="stat"><div class="k">Correctas</div><div class="v" id="correct">0</div></div>
+                <div class="stat"><div class="k">Incorrectas</div><div class="v" id="wrong">0</div></div>
+                <div class="stat"><div class="k">Puntuación</div><div class="v" id="score">0%</div></div>
+            </div>
+            <div class="review" id="review">
+                <h2>Revisión y Temas a Repasar</h2>
+                <div id="reviewList"></div>
+            </div>
+        </aside>
+    </main>
+</div>
+
+
+<!-- Así debe cargar los scripts -->
+<script type="module" src="js/questions/index.js"></script>
+<script type="module" src="js/dashboard-navigation.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

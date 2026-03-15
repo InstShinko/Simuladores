@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Simulador Académico - Acceso</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        /* Estilos específicos para login */
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        
+        .login-card {
+            max-width: 400px;
+            width: 100%;
+            padding: 32px;
+        }
+        
+        .login-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .login-header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--accent), #66a7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .login-header .sub {
+            font-size: 14px;
+        }
+        
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .form-group label {
+            font-size: 14px;
+            color: var(--muted);
+        }
+        
+        .form-group input {
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .05);
+            color: var(--text);
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(102, 227, 180, .2);
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            margin-top: 16px;
+            background: linear-gradient(135deg, var(--accent), #66a7ff);
+            border: none;
+            color: #0b1220;
+            font-weight: bold;
+        }
+        
+        .login-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .error-message {
+            color: var(--bad);
+            font-size: 14px;
+            text-align: center;
+            min-height: 20px;
+            margin-top: 8px;
+        }
+        
+        .info-message {
+            text-align: center;
+            margin-top: 24px;
+            color: var(--muted);
+            font-size: 13px;
+            padding: 12px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .info-message a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="card login-card">
+            <div class="login-header">
+                <h1>🧪 Simulador Académico</h1>
+                <p class="sub">Acceso para estudiantes</p>
+            </div>
+            
+            <div class="login-form">
+                <div class="form-group">
+                    <label>📧 Correo electrónico</label>
+                    <input type="email" id="loginEmail" placeholder="correo@institucion.edu" autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                    <label>🔑 Contraseña</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••">
+                </div>
+                
+                <div id="loginError" class="error-message"></div>
+                
+                <button class="primary login-btn" id="loginBtn">Iniciar sesión</button>
+                
+                <div class="info-message">
+                    ⚡ Acceso autorizado - Solo para estudiantes registrados
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>
