@@ -11,7 +11,7 @@ import materiaInteracciones1 from './trimestre1/materia-interacciones.js';
 import laboratorio1 from './trimestre1/laboratorio.js';
 import lengua1 from './trimestre1/lengua-comunicacion.js';
 import matematicas1 from './trimestre1/pensamiento-matematico.js';
-import socioemocionales1 from './trimestre1/socioemocionales.js';
+
 
 // ============================================
 // BANCO CENTRALIZADO DE PREGUNTAS - 6 TRIMESTRES
@@ -29,7 +29,7 @@ export const SIMULADORES = {
             laboratorio: laboratorio1,
             lengua1: lengua1,
             matematicas1: matematicas1,
-            socioemocionales1: socioemocionales1
+         
         }
     },
     
