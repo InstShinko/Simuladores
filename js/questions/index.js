@@ -12,6 +12,14 @@ import laboratorio1 from './trimestre1/laboratorio.js';
 import lengua1 from './trimestre1/lengua-comunicacion.js';
 import matematicas1 from './trimestre1/pensamiento-matematico.js';
 
+import sociales2 from './trimestre2/sociales2.js';
+import conservacionEnergia2 from './trimestre2/conservacionEnergia2.js';
+import cultural2 from './trimestre2/cultural2.js';
+import humanidades2 from './trimestre2/humanidades2.js';
+import ingles2 from './trimestre2/ingles2.js';
+import lengua2 from './trimestre2/lengua2.js';
+import matematicas2 from './trimestre2/matematicas2.js';
+
 
 // ============================================
 // BANCO CENTRALIZADO DE PREGUNTAS - 6 TRIMESTRES
@@ -33,12 +41,19 @@ export const SIMULADORES = {
         }
     },
     
-    trimestre2: {
-        nombre: "Trimestre 2",
-        materias: {
-            // Aquí se importarán cuando las tengamos
-        }
-    },
+     trimestre2: {
+    nombre: "Trimestre 2",
+    materias: {
+        sociales2: sociales2,
+        conservacionEnergia2: conservacionEnergia2,
+        cultural2: cultural2,
+        humanidades2: humanidades2,
+        ingles2: ingles2,
+        lengua2: lengua2,
+        matematicas2: matematicas2,
+      
+    }
+},
     
     trimestre3: {
         nombre: "Trimestre 3",
