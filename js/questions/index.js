@@ -23,6 +23,8 @@ import matematicas2 from './trimestre2/matematicas2.js';
 import ingles3 from './trimestre3/ingles3.js';
 import matematicas3 from './trimestre3/matematicas3.js';
 import humanidades3 from './trimestre3/humanidades3.js';
+import lengua3 from './trimestre3/lengua3.js';
+import ecosistema from './trimestre3/ecosistema.js';
 
 // ============================================
 // BANCO CENTRALIZADO DE PREGUNTAS - 6 TRIMESTRES
@@ -64,6 +66,8 @@ export const SIMULADORES = {
             ingles3: ingles3,
             matematicas3: matematicas3,
             humanidades3: humanidades3,
+            lengua3: lengua3,
+            ecositema: ecosistema,
         }
     },
     
