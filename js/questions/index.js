@@ -20,6 +20,7 @@ import ingles2 from './trimestre2/ingles2.js';
 import lengua2 from './trimestre2/lengua2.js';
 import matematicas2 from './trimestre2/matematicas2.js';
 
+import ingles3 from './trimestre3/ingles3.js';
 
 // ============================================
 // BANCO CENTRALIZADO DE PREGUNTAS - 6 TRIMESTRES
@@ -57,7 +58,9 @@ export const SIMULADORES = {
     
     trimestre3: {
         nombre: "Trimestre 3",
-        materias: {}
+        materias: {
+            ingles3: ingles3,
+        }
     },
     
     trimestre4: {
