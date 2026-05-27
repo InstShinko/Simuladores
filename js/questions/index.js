@@ -26,6 +26,16 @@ import humanidades3 from './trimestre3/humanidades3.js';
 import lengua3 from './trimestre3/lengua3.js';
 import ecosistema from './trimestre3/ecosistema.js';
 
+import ingles4 from './trimestre4/ingles4.js';
+import sociales3 from './trimestre4/sociales3.js';
+import concienciahistorica from './trimestre4/concienciahistorica.js';
+import espacioysociedad from './trimestre4/espacioysociedad.js';
+import pensamientoliterario from './trimestre4/pensamientoliterario.js';
+import reaccionesquimicas from './trimestre4/reaccionesquimicas.js';
+import tallerdeculturadigital from './trimestre4/tallerdeculturadigital.js';
+import temasselectosmatematicos from './trimestre4/temasselectosmatematicos.js';
+
+
 // ============================================
 // BANCO CENTRALIZADO DE PREGUNTAS - 6 TRIMESTRES
 // ============================================
@@ -73,7 +83,16 @@ export const SIMULADORES = {
     
     trimestre4: {
         nombre: "Trimestre 4",
-        materias: {}
+        materias: {
+            ingles4: ingles4,
+            sociales3: sociales3,
+            concienciahistorica: concienciahistorica,
+            espacioysociedad: espacioysociedad,
+            pensamientoliterario: pensamientoliterario,
+            reacionesquimicas: reaccionesquimicas,
+            tallerdeculturadigital: tallerdeculturadigital,
+            temasselectosmatematicos: temasselectosmatematicos
+        }
     },
     
     trimestre5: {
