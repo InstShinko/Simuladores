@@ -35,7 +35,12 @@ import reaccionesquimicas from './trimestre4/reaccionesquimicas.js';
 import tallerdeculturadigital from './trimestre4/tallerdeculturadigital.js';
 import temasselectosmatematicos from './trimestre4/temasselectosmatematicos.js';
 
-
+import administracion from './trimestre5/admin.js';
+import concienciaHistorica2 from './trimestre5/concienciahistorica2.js';
+import derecho from './trimestre5/derecho.js';
+import diferencial from './trimestre5/diferencial.js';
+import energia from './trimestre5/energia.js';
+import salud from './trimestre5/salud.js';
 // ============================================
 // BANCO CENTRALIZADO DE PREGUNTAS - 6 TRIMESTRES
 // ============================================
@@ -97,7 +102,14 @@ export const SIMULADORES = {
     
     trimestre5: {
         nombre: "Trimestre 5",
-        materias: {}
+        materias: {
+            administracion:administracion,
+            concienciaHistorica2:concienciaHistorica2,
+            derecho:derecho,
+            diferencial:diferencial,
+            energia:energia,
+            salud:salud
+        }
     },
     
     trimestre6: {
