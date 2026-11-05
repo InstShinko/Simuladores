@@ -41,6 +41,13 @@ import derecho from './trimestre5/derecho.js';
 import diferencial from './trimestre5/diferencial.js';
 import energia from './trimestre5/energia.js';
 import salud from './trimestre5/salud.js';
+import organismos from './trimestre6/organismos.js';
+import concienciahistorica3 from './trimestre6/concienciahistorica3.js';
+import temasselectosmatematicos2 from './trimestre6/temasselectosmatematicos2.js';
+import integral from './trimestre6/integral.js';
+import admin2 from './trimestre6/admin2.js';
+import salud2 from './trimestre6/salud2.js';
+import derecho2 from './trimestre6/derecho2.js';
 // ============================================
 // BANCO CENTRALIZADO DE PREGUNTAS - 6 TRIMESTRES
 // ============================================
@@ -114,7 +121,15 @@ export const SIMULADORES = {
     
     trimestre6: {
         nombre: "Trimestre 6",
-        materias: {}
+        materias: {
+            organismos,
+            concienciahistorica3,
+            temasselectosmatematicos2,
+            integral,
+            admin2,
+            salud2,
+            derecho2
+        }
     }
 };
 

@@ -5,7 +5,7 @@ import { SIMULADORES } from './questions/index.js';  // 👈 IMPORTA DESDE INDEX
 // Estado actual de navegación
 let estadoActual = {
     trimestre: 'trimestre1',
-    materia: 'quimica1',
+    materia: 'sociales1',
     modulo: 'modulo1',
     actividad: 'act1'
 };
@@ -32,6 +32,7 @@ function inicializarNavegacion() {
     renderizarMaterias();
     actualizarBreadcrumb();
     actualizarInfoSimulador();
+    cargarActividad(estadoActual.materia, estadoActual.modulo, estadoActual.actividad);
 }
 
 // ========== RENDERIZAR PESTAÑAS DE TRIMESTRES ==========
@@ -65,6 +66,7 @@ function renderizarTrimestres() {
             
             // Resetear simulador
             resetearSimulador();
+            cargarActividad(estadoActual.materia, estadoActual.modulo, estadoActual.actividad);
         });
         
         trimestresNav.appendChild(tab);
@@ -88,7 +90,7 @@ function renderizarMaterias() {
             <div class="materia-icon">${materia.icono}</div>
             <div class="materia-info">
                 <div class="materia-nombre">${materia.nombre}</div>
-                <div class="materia-progreso">${Object.keys(materia.modulos).length} módulos • 9 actividades</div>
+                <div class="materia-progreso">${Object.keys(materia.modulos).length} módulos • ${Object.values(materia.modulos).reduce((total, modulo) => total + Object.keys(modulo.actividades).length, 0)} actividades</div>
             </div>
             <div class="materia-expand-icon">▼</div>
         `;
@@ -114,6 +116,9 @@ function renderizarMaterias() {
                 
                 const actBtn = document.createElement('button');
                 actBtn.className = `actividad-btn ${isActive ? 'active' : ''}`;
+                actBtn.dataset.materia = materiaId;
+                actBtn.dataset.modulo = moduloId;
+                actBtn.dataset.actividad = actId;
                 actBtn.innerHTML = `
                     <span class="actividad-numero">${actId.replace('act', 'Act. ')}</span>
                     <span class="actividad-desc">${actividad.desc}</span>
@@ -130,6 +135,7 @@ function renderizarMaterias() {
                     actualizarInfoSimulador();
                     
                     // Cargar preguntas de esta actividad
+                    resetearSimulador();
                     cargarActividad(materiaId, moduloId, actId);
                 });
                 
