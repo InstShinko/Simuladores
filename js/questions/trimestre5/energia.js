@@ -1,6 +1,6 @@
 // ============================================
 // LA ENERGÍA EN LOS PROCESOS DE LA VIDA DIARIA
-// 9 ACTIVIDADES - 90 PREGUNTAS
+// 9 ACTIVIDADES - 10 PREGUNTAS POR INTENTO
 // ============================================
 
 const energiaVidaDiaria = {
@@ -86,6 +86,13 @@ const energiaVidaDiaria = {
                             options: ["La fuerza aplicada a un cuerpo", "La relación entre el trabajo y el tiempo empleado", "La energía almacenada", "La velocidad de un objeto"],
                             answerIndex: 1,
                             explain: "La potencia es la relación entre un trabajo y el tiempo que se emplea para realizarlo, según P = W/t."
+                        },
+                        {
+                            topic: "Potencia mecánica",
+                            q: "Dos motores realizan el mismo trabajo. Si uno tarda la mitad que el otro, ¿cuál es su potencia media?",
+                            options: ["El doble", "La mitad", "La misma", "Cuatro veces mayor"],
+                            answerIndex: 0,
+                            explain: "La potencia media es el trabajo dividido entre el tiempo. Si el trabajo es el mismo y el tiempo se reduce a la mitad, la potencia se duplica."
                         }
                     ]
                 },
@@ -163,6 +170,13 @@ const energiaVidaDiaria = {
                             options: ["Cuando su fuerza resultante es cero", "Cuando su fuerza resultante es máxima", "Cuando su velocidad es máxima", "Cuando su aceleración es constante"],
                             answerIndex: 0,
                             explain: "Para que un cuerpo esté en reposo o en equilibrio, es necesario que todas las fuerzas que actúan sobre él se encuentren en total equilibrio, es decir, su fuerza resultante sea cero."
+                        },
+                        {
+                            topic: "Rapidez y velocidad media",
+                            q: "Una persona recorre 30 m en línea recta y vuelve por el mismo camino en 20 s en total. ¿Cuál es su velocidad media?",
+                            options: ["1.5 m/s hacia el punto de partida", "0 m/s", "3 m/s hacia el punto de partida", "3 m/s en la dirección de ida"],
+                            answerIndex: 1,
+                            explain: "La velocidad media depende del desplazamiento. Al regresar al punto de partida, el desplazamiento es cero y se recorren 60 m."
                         }
                     ]
                 },
@@ -240,6 +254,13 @@ const energiaVidaDiaria = {
                             options: ["Se conserva", "Aumenta", "Disminuye", "Varía aleatoriamente"],
                             answerIndex: 0,
                             explain: "En un sistema aislado (sin fuerzas externas), la cantidad de movimiento total se conserva."
+                        },
+                        {
+                            topic: "Conservación del momento lineal",
+                            q: "Dos carritos iguales se mueven con velocidades de igual magnitud y sentidos opuestos. ¿Cuál es su momento lineal total?",
+                            options: ["El doble del momento de uno en el sentido del primero", "El momento de uno solo", "Cero", "El doble del momento de uno en el sentido del segundo"],
+                            answerIndex: 2,
+                            explain: "Cada momento es el producto de la masa por la velocidad. Como los vectores son iguales en magnitud y opuestos, su suma es cero."
                         }
                     ]
                 }
@@ -249,7 +270,7 @@ const energiaVidaDiaria = {
             nombre: "Módulo 2: Importancia de los Campos Eléctricos y Magnéticos en el Desarrollo de la Vida",
             actividades: {
                 act1: {
-                    nombre: "Actividad 1: Campos Eléctricos y Magnéticos",
+                    nombre: "Actividad 1: Fuerzas y Espectro Electromagnético",
                     desc: "Identificación de tipos de fuerza, radiación electromagnética, espectro electromagnético y aplicaciones.",
                     preguntas: 10,
                     banco: [
@@ -322,6 +343,13 @@ const energiaVidaDiaria = {
                             options: ["Einstein", "Newton", "Galileo", "Coulomb"],
                             answerIndex: 1,
                             explain: "Isaac Newton demostró que la luz blanca del Sol es una mezcla de colores al incidir un rayo luminoso sobre un prisma de cristal."
+                        },
+                        {
+                            topic: "Espectro electromagnético",
+                            q: "¿Qué luz tiene mayor frecuencia, la violeta o la roja, al compararlas en el vacío?",
+                            options: ["La roja, porque tiene mayor longitud de onda", "Ambas tienen la misma frecuencia porque viajan a la misma rapidez", "La roja, porque viaja más rápido en el vacío", "La violeta, porque tiene menor longitud de onda"],
+                            answerIndex: 3,
+                            explain: "En el vacío, la frecuencia es la rapidez de la luz dividida entre la longitud de onda. La luz violeta tiene menor longitud de onda y mayor frecuencia."
                         }
                     ]
                 },
@@ -399,6 +427,13 @@ const energiaVidaDiaria = {
                             options: ["Barras de hierro imantadas artificialmente", "Minerales extraídos de la tierra con poder magnético", "Imanes temporales", "Imanes permanentes"],
                             answerIndex: 1,
                             explain: "Los imanes naturales son extraídos de la tierra, poseen poder magnético y están formados por óxidos de materiales ferromagnéticos como la magnetita."
+                        },
+                        {
+                            topic: "Ley de Coulomb",
+                            q: "Si la distancia entre dos cargas puntuales se duplica y las cargas se mantienen, ¿qué sucede con la magnitud de la fuerza?",
+                            options: ["Se reduce a la cuarta parte", "Se reduce a la mitad", "Se duplica", "Se mantiene igual"],
+                            answerIndex: 0,
+                            explain: "La fuerza electrostática es inversamente proporcional al cuadrado de la distancia. Al duplicar la distancia, se multiplica por 1/4."
                         }
                     ]
                 },
@@ -476,6 +511,13 @@ const energiaVidaDiaria = {
                             options: ["El flujo de cargas siempre en la misma dirección", "El flujo de cargas se mueve de un lado a otro dentro del conductor", "Es generada por pilas", "No cambia de dirección"],
                             answerIndex: 1,
                             explain: "La corriente alterna es aquella donde el flujo de cargas se mueve de un lado a otro dentro del conductor, es decir, las cargas 'van y regresan' constantemente."
+                        },
+                        {
+                            topic: "Circuitos en paralelo",
+                            q: "Se conectan en paralelo dos resistencias de 6 Ω. ¿Cuál es su resistencia equivalente?",
+                            options: ["6 Ω", "3 Ω", "12 Ω", "36 Ω"],
+                            answerIndex: 1,
+                            explain: "En paralelo se suman los inversos de las resistencias. En este caso, 1/R = 1/6 + 1/6 = 1/3."
                         }
                     ]
                 }
@@ -515,14 +557,14 @@ const energiaVidaDiaria = {
                             q: "¿Dónde se lleva a cabo el ciclo de Krebs?",
                             options: ["En el citosol", "En la matriz de la mitocondria", "En el núcleo", "En la membrana celular"],
                             answerIndex: 1,
-                            explain: "El ciclo de Krebs se lleva a cabo en la matriz de la mitocondria, donde el ácido pirúvico se descarboxila y se integra al ciclo."
+                            explain: "El ciclo de Krebs se lleva a cabo en la matriz de la mitocondria. La conversión del piruvato en acetil-CoA ocurre antes del ciclo. El acetil-CoA aporta el grupo acetilo que entra en el ciclo."
                         },
                         {
                             topic: "ATP",
                             q: "¿Qué función tiene el ATP en el organismo?",
                             options: ["Almacenar energía", "Transportar oxígeno", "Digestión de alimentos", "Síntesis de proteínas"],
                             answerIndex: 0,
-                            explain: "En cada enlace del ATP se guarda una gran cantidad de energía que es utilizada por el organismo para diversas funciones."
+                            explain: "La hidrólisis del ATP libera energía utilizable para procesos celulares como el transporte activo y la contracción muscular."
                         },
                         {
                             topic: "Respiración anaerobia",
@@ -541,9 +583,9 @@ const energiaVidaDiaria = {
                         {
                             topic: "Fermentación láctica",
                             q: "¿Qué produce la fermentación láctica en las células musculares animales?",
-                            options: ["Etanol", "Ácido láctico", "Ácido acético", "Ácido butírico"],
+                            options: ["Etanol", "Lactato", "Ácido acético", "Ácido butírico"],
                             answerIndex: 1,
-                            explain: "La fermentación láctica genera ATP pero produce ácido láctico, lo cual al acumularse causa la sensación dolorosa de fatiga muscular."
+                            explain: "La fermentación láctica convierte piruvato en lactato y regenera NAD⁺, lo que permite que la glucólisis siga produciendo ATP."
                         },
                         {
                             topic: "Fermentación acética",
@@ -555,9 +597,16 @@ const energiaVidaDiaria = {
                         {
                             topic: "Ecuación de respiración aerobia",
                             q: "¿Cuál es la ecuación general de la respiración aerobia?",
-                            options: ["C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 38 ATP", "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + 2ATP", "C₆H₁₂O₆ + 6O₂ + 12KNO₃ → 6CO₂ + 6H₂O + 12KNO₂ + 2ATP", "C₆H₁₂O₆ → 2C₃H₆O₃ + 2ATP"],
+                            options: ["C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O", "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ + 2ATP", "C₆H₁₂O₆ + 6O₂ + 12KNO₃ → 6CO₂ + 6H₂O + 12KNO₂ + 2ATP", "C₆H₁₂O₆ → 2C₃H₆O₃ + 2ATP"],
                             answerIndex: 0,
-                            explain: "La ecuación general de la respiración aerobia es C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 38 ATP."
+                            explain: "La ecuación general de la respiración aerobia es C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O."
+                        },
+                        {
+                            topic: "Glucólisis",
+                            q: "¿En qué molécula se transforma la glucosa al finalizar la glucólisis?",
+                            options: ["En dos moléculas de acetil-CoA", "En una molécula de glucógeno", "En dos moléculas de piruvato", "En una molécula de lactato"],
+                            answerIndex: 2,
+                            explain: "La glucólisis divide la glucosa de seis carbonos en dos moléculas de piruvato de tres carbonos cada una."
                         }
                     ]
                 },
@@ -635,6 +684,13 @@ const energiaVidaDiaria = {
                             options: ["Un ciclo biogeoquímico", "Un ciclo energético", "Un ciclo térmico", "Un ciclo eléctrico"],
                             answerIndex: 0,
                             explain: "El ciclo del agua es un ciclo biogeoquímico, donde las moléculas de agua se mueven entre los diferentes compartimientos de la biosfera."
+                        },
+                        {
+                            topic: "Flujo de energía",
+                            q: "¿Qué proceso permite a los productores incorporar energía luminosa a un ecosistema?",
+                            options: ["Respiración celular", "Fermentación", "Descomposición", "Fotosíntesis"],
+                            answerIndex: 3,
+                            explain: "La fotosíntesis transforma energía luminosa en energía química almacenada en compuestos orgánicos."
                         }
                     ]
                 },
@@ -712,6 +768,13 @@ const energiaVidaDiaria = {
                             options: ["El agua", "El viento", "Los glaciares", "El hielo"],
                             answerIndex: 1,
                             explain: "La erosión eólica es producida por el viento que transporta finas partículas sueltas, siendo más visible en las zonas desérticas, donde forma dunas."
+                        },
+                        {
+                            topic: "Procesos externos de la Tierra",
+                            q: "Si el agua de un río arrastra fragmentos de roca aguas abajo, ¿qué proceso describe su desplazamiento?",
+                            options: ["Transporte de sedimentos", "Meteorización química", "Sedimentación", "Subducción"],
+                            answerIndex: 0,
+                            explain: "El transporte desplaza los materiales erosionados. La sedimentación ocurre cuando esos materiales se depositan."
                         }
                     ]
                 }

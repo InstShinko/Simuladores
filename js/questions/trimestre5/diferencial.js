@@ -1,6 +1,6 @@
 // ============================================
 // CÁLCULO DIFERENCIAL
-// 9 ACTIVIDADES - 90 PREGUNTAS
+// 9 ACTIVIDADES - 10 PREGUNTAS POR INTENTO
 // ============================================
 
 const calculoDiferencial = {
@@ -86,6 +86,13 @@ const calculoDiferencial = {
                             options: ["δ = ε", "δ = ε/2", "δ = 2ε", "δ = ε²"],
                             answerIndex: 1,
                             explain: "De la desigualdad |2x - 8| < ε → 2|x - 4| < ε → |x - 4| < ε/2, por lo tanto se toma δ = ε/2."
+                        },
+                        {
+                            topic: "Límites laterales",
+                            q: "Si f(x) se aproxima a 2 por la izquierda de a y a 5 por la derecha, ¿qué se concluye sobre el límite bilateral?",
+                            options: ["No existe", "Es 2", "Es 5", "Es 3.5"],
+                            answerIndex: 0,
+                            explain: "El límite bilateral requiere que ambos límites laterales existan y sean iguales."
                         }
                     ]
                 },
@@ -163,6 +170,13 @@ const calculoDiferencial = {
                             options: ["Sumas de funciones", "Productos de funciones", "Composiciones de funciones", "Cocientes de funciones"],
                             answerIndex: 2,
                             explain: "La regla de la cadena es útil para derivar funciones compuestas, es decir, funciones que son composición de otras funciones."
+                        },
+                        {
+                            topic: "Regla de la cadena",
+                            q: "Si f(x) = 1/(x² + 2), ¿cuál es f′(x)?",
+                            options: ["2x/(x² + 2)²", "−2x/(x² + 2)²", "−1/(x² + 2)²", "−2x/(x² + 2)"],
+                            answerIndex: 1,
+                            explain: "La derivada de u⁻¹ es −u⁻²u′ y aquí u′ = 2x."
                         }
                     ]
                 },
@@ -240,6 +254,13 @@ const calculoDiferencial = {
                             options: ["Se deriva primero la potencia, luego el cociente", "Se deriva primero el cociente, luego la potencia", "Se deriva todo al mismo tiempo", "No se puede aplicar la regla de la cadena"],
                             answerIndex: 0,
                             explain: "Se deriva primero la potencia (bajando el exponente), luego se multiplica por la derivada del cociente interno."
+                        },
+                        {
+                            topic: "Reglas del cociente y de la cadena",
+                            q: "Si f(x) = (x/(x + 1))², ¿cuál es f′(x) para x ≠ −1?",
+                            options: ["2x/(x + 1)²", "−2x/(x + 1)³", "2x/(x + 1)³", "2/(x + 1)²"],
+                            answerIndex: 2,
+                            explain: "El cociente interior tiene derivada 1/(x + 1)². Al multiplicarla por 2x/(x + 1), se obtiene 2x/(x + 1)³."
                         }
                     ]
                 }
@@ -322,6 +343,13 @@ const calculoDiferencial = {
                             options: ["10ˣ", "ln 10 · 10ˣ", "10ˣ/ln 10", "x·10ˣ⁻¹"],
                             answerIndex: 1,
                             explain: "f'(x) = ln 10 · 10ˣ, ya que f(x) = e^(x·ln 10)."
+                        },
+                        {
+                            topic: "Derivadas logarítmicas",
+                            q: "¿Cuál es la derivada de log₂ x para x > 0?",
+                            options: ["ln 2/x", "1/(2x)", "2/x", "1/(x ln 2)"],
+                            answerIndex: 3,
+                            explain: "Por cambio de base, log₂ x = ln x/ln 2, y ln 2 es constante."
                         }
                     ]
                 },
@@ -367,10 +395,10 @@ const calculoDiferencial = {
                         },
                         {
                             topic: "Derivada n-ésima",
-                            q: "Si f(x) = eˣ + 2x³, ¿cuál es la derivada n-ésima?",
-                            options: ["eˣ", "eˣ + 2x³", "eˣ + 0", "eˣ + 2xⁿ"],
+                            q: "Si f(x) = eˣ + 2x³, ¿cuál es la derivada de orden n para n ≥ 4?",
+                            options: ["eˣ", "eˣ + 2x³", "eˣ + 12", "eˣ + 2xⁿ"],
                             answerIndex: 0,
-                            explain: "La derivada n-ésima de eˣ es eˣ, y las derivadas de orden superior de 2x³ se anulan después de la cuarta derivada."
+                            explain: "Todas las derivadas de eˣ son eˣ. La cuarta derivada de 2x³ y todas las de orden superior son cero."
                         },
                         {
                             topic: "Derivada de orden superior",
@@ -399,6 +427,13 @@ const calculoDiferencial = {
                             options: ["60x² - 24", "20x³ - 12x", "60x² + 24", "60x² - 24x"],
                             answerIndex: 0,
                             explain: "f''(x) = 20x³ - 24x, f'''(x) = 60x² - 24."
+                        },
+                        {
+                            topic: "Derivadas de orden superior",
+                            q: "Si f(x) = 3x⁴ − 2x², ¿cuál es f⁽⁴⁾(x)?",
+                            options: ["72", "24", "36", "0"],
+                            answerIndex: 0,
+                            explain: "La cuarta derivada de 3x⁴ es 3 × 4 × 3 × 2 × 1 = 72 y la de −2x² es cero."
                         }
                     ]
                 },
@@ -476,6 +511,13 @@ const calculoDiferencial = {
                             options: ["∂²f/∂x∂y = ∂²f/∂y∂x", "∂f/∂x + ∂f/∂y", "∂f/∂x · ∂f/∂y", "No existe"],
                             answerIndex: 0,
                             explain: "Una derivada parcial mixta es la derivada parcial de una derivada parcial, como ∂²f/∂x∂y = ∂²f/∂y∂x, que bajo condiciones de continuidad son iguales."
+                        },
+                        {
+                            topic: "Derivadas parciales",
+                            q: "Si z = x²y + y², ¿cuál es la pendiente en la dirección de x en (2, 3) con y fija?",
+                            options: ["10", "12", "4", "6"],
+                            answerIndex: 1,
+                            explain: "La derivada parcial con respecto a x es 2xy. En (2, 3) vale 12."
                         }
                     ]
                 }
@@ -533,17 +575,17 @@ const calculoDiferencial = {
                         },
                         {
                             topic: "Velocidad de vehículos",
-                            q: "Si v(t) = t³/3 - 4t² + 15t + 10, ¿a qué hora se alcanza la velocidad máxima entre las 2pm y 8pm?",
-                            options: ["2pm", "3pm", "5pm", "8pm"],
-                            answerIndex: 1,
-                            explain: "v'(t) = t² - 8t + 15 = (t-3)(t-5), con v''(3) = -2 < 0, por lo tanto t = 3 (3pm) es máximo."
+                            q: "Si v(t) = t³/3 - 4t² + 15t + 10, ¿a qué hora alcanza su máximo absoluto en el intervalo de 2 a 8 p. m.?",
+                            options: ["2 p. m.", "3 p. m.", "5 p. m.", "8 p. m."],
+                            answerIndex: 3,
+                            explain: "Se comparan v(2) = 80/3, v(3) = 28, v(5) = 80/3 y v(8) = 134/3. El mayor valor se alcanza a las 8 p. m."
                         },
                         {
                             topic: "Velocidad de vehículos",
-                            q: "Si v(t) = t³/3 - 4t² + 15t + 10, ¿a qué hora se alcanza la velocidad mínima entre las 2pm y 8pm?",
-                            options: ["2pm", "3pm", "5pm", "8pm"],
+                            q: "Si v(t) = t³/3 - 4t² + 15t + 10, ¿a qué horas alcanza su mínimo absoluto en el intervalo de 2 a 8 p. m.?",
+                            options: ["2 y 3 p. m.", "3 y 5 p. m.", "2 y 5 p. m.", "5 y 8 p. m."],
                             answerIndex: 2,
-                            explain: "v'(t) = t² - 8t + 15 = (t-3)(t-5), con v''(5) = 2 > 0, por lo tanto t = 5 (5pm) es mínimo."
+                            explain: "Los puntos críticos interiores son t = 3 y t = 5. Al comparar sus valores con los de los extremos del intervalo, el menor valor es 80/3 y se alcanza tanto a las 2 como a las 5 p. m."
                         },
                         {
                             topic: "Criterio de la segunda derivada",
@@ -558,6 +600,13 @@ const calculoDiferencial = {
                             options: ["s''(10) > 0", "s''(10) < 0", "s''(10) = 0", "s''(10) no existe"],
                             answerIndex: 1,
                             explain: "s''(10) = 30 - 6(10) = -30 < 0, por lo tanto y = 10 es un máximo."
+                        },
+                        {
+                            topic: "Extremos en intervalos cerrados",
+                            q: "Para encontrar el máximo absoluto de una función continua en un intervalo cerrado, ¿qué valores se deben comparar?",
+                            options: ["Solo los valores en los máximos locales interiores", "Solo los valores en los extremos del intervalo", "Los valores en los puntos críticos interiores y en los extremos del intervalo", "Los valores de la segunda derivada en los puntos críticos"],
+                            answerIndex: 2,
+                            explain: "Un máximo absoluto puede estar en el interior o en un extremo del intervalo. Se comparan los valores de la función en esos candidatos."
                         }
                     ]
                 },
@@ -635,6 +684,13 @@ const calculoDiferencial = {
                             options: ["8x(x²-4)³", "4x(x²-4)³", "8x(x²-4)⁴", "4(x²-4)³"],
                             answerIndex: 0,
                             explain: "f'(x) = 4(x²-4)³ · 2x = 8x(x²-4)³."
+                        },
+                        {
+                            topic: "Regla de la cadena",
+                            q: "Si f(x) = (1 − x³)⁵, ¿cuál es f′(x)?",
+                            options: ["5(1 − x³)⁴", "−15x²(1 − x³)⁵", "15x²(1 − x³)⁴", "−15x²(1 − x³)⁴"],
+                            answerIndex: 3,
+                            explain: "La derivada de la potencia exterior aporta 5(1 − x³)⁴ y la función interior aporta −3x²."
                         }
                     ]
                 },
@@ -712,6 +768,13 @@ const calculoDiferencial = {
                             options: ["Arquitectura", "Ingeniería", "Biología", "Medicina"],
                             answerIndex: 1,
                             explain: "En ingeniería se aplican las derivadas para el diseño de vías y carreteras, así como para problemas de optimización."
+                        },
+                        {
+                            topic: "Regla de L’Hôpital",
+                            q: "Al aplicar la regla de L’Hôpital al límite de (eˣ − 1)/x cuando x tiende a 0, ¿qué cociente queda por evaluar?",
+                            options: ["eˣ/1", "(eˣ − 1)/1", "eˣ/x", "1/eˣ"],
+                            answerIndex: 0,
+                            explain: "La sustitución inicial da 0/0. Se derivan el numerador y el denominador por separado, y el nuevo cociente tiende a 1."
                         }
                     ]
                 }

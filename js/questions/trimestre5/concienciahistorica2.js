@@ -1,7 +1,7 @@
 // ============================================
 // CONCIENCIA HISTÓRICA II
 // MÉXICO DURANTE EL EXPANSIONISMO CAPITALISTA
-// 9 ACTIVIDADES - 90 PREGUNTAS
+// 9 ACTIVIDADES - 10 PREGUNTAS POR INTENTO
 // ============================================
 
 const concienciaHistoricaII = {
@@ -87,6 +87,13 @@ const concienciaHistoricaII = {
                             options: ["John Locke", "Montesquieu", "Jean-Jacques Rousseau", "Voltaire"],
                             answerIndex: 1,
                             explain: "Montesquieu, con su obra 'El Espíritu de las Leyes', expuso la necesidad de que un gobierno tuviese la separación de poderes (legislativo, ejecutivo y judicial)."
+                        },
+                        {
+                            topic: "Reformas borbónicas",
+                            q: "¿Por qué las reformas borbónicas contribuyeron al descontento de sectores criollos?",
+                            options: ["Reforzaron el control de la Corona y limitaron el acceso criollo a cargos importantes", "Entregaron a los criollos el control de toda la recaudación", "Suprimieron el poder de los funcionarios enviados desde España", "Dieron autonomía política a las provincias novohispanas"],
+                            answerIndex: 0,
+                            explain: "La centralización de la administración colonial restringió la influencia política de sectores criollos."
                         }
                     ]
                 },
@@ -164,6 +171,13 @@ const concienciaHistoricaII = {
                             options: ["Doctrina Monroe", "Destino Manifiesto", "Plan de San Luis", "Tratado de Guadalupe"],
                             answerIndex: 1,
                             explain: "El Destino Manifiesto era una filosofía expansionista e imperialista que decretaba el derecho de los blancos anglosajones a poblar territorios, primero del norte de México y luego el resto del continente."
+                        },
+                        {
+                            topic: "Etapas de la Independencia",
+                            q: "¿Qué secuencia distingue la resistencia insurgente de la consumación de la Independencia?",
+                            options: ["Morelos organizó la resistencia después del pacto entre Guerrero e Iturbide", "Guerrero mantuvo la resistencia y después pactó con Iturbide", "Hidalgo promulgó el Plan de Iguala al comenzar la insurgencia", "Mina encabezó la entrada del Ejército Trigarante en la capital"],
+                            answerIndex: 1,
+                            explain: "Tras el debilitamiento de la insurgencia, Guerrero sostuvo la lucha y más tarde se alió con Iturbide."
                         }
                     ]
                 },
@@ -241,6 +255,13 @@ const concienciaHistoricaII = {
                             options: ["La Constitución de 1824", "La Constitución de 1857", "La Constitución de 1917", "La Constitución de Apatzingán"],
                             answerIndex: 1,
                             explain: "Benito Juárez impulsó la promulgación de la Constitución de 1857, considerada como base del actual documento constitucional de 1917."
+                        },
+                        {
+                            topic: "Ilustración y liberalismo",
+                            q: "¿Qué vínculo hay entre las ideas ilustradas y la propuesta insurgente de abolir la esclavitud?",
+                            options: ["La defensa de los privilegios hereditarios justificaba la esclavitud", "El fortalecimiento del absolutismo garantizaba la igualdad civil", "La defensa de la libertad individual y la igualdad civil cuestionaba la esclavitud", "El sistema de castas era el medio para asegurar la libertad individual"],
+                            answerIndex: 2,
+                            explain: "La libertad individual y la igualdad civil sirvieron de fundamento para cuestionar la esclavitud y los privilegios de nacimiento."
                         }
                     ]
                 }
@@ -323,6 +344,13 @@ const concienciaHistoricaII = {
                             options: ["Guillermo II", "Otto von Bismarck", "Napoleón III", "Luis XIV"],
                             answerIndex: 1,
                             explain: "Otto von Bismarck, canciller alemán, propuso la famosa Conferencia de Berlín (1885) para la cuestión del reparto del continente africano a manos de siete naciones."
+                        },
+                        {
+                            topic: "Segundo Imperio mexicano",
+                            q: "¿Qué decisión de Maximiliano generó desacuerdo con los conservadores que habían apoyado el Imperio?",
+                            options: ["Restaurar la aplicación de la Constitución de Cádiz", "Poner en vigor el Plan de Ayutla", "Devolver el gobierno a Santa Anna", "Mantener vigentes las Leyes de Reforma"],
+                            answerIndex: 3,
+                            explain: "Maximiliano mantuvo las Leyes de Reforma, una decisión contraria a las expectativas de sectores conservadores."
                         }
                     ]
                 },
@@ -400,6 +428,13 @@ const concienciaHistoricaII = {
                             options: ["1890-1976", "1900-1976", "1900-1960", "1890-1950"],
                             answerIndex: 1,
                             explain: "La Penitenciaría de Lecumberri fue inaugurada en 1900 y funcionó hasta 1976, respondiendo a los requerimientos de una cárcel panóptica."
+                        },
+                        {
+                            topic: "Porfiriato",
+                            q: "¿Qué contraste ayuda a explicar el descontento laboral durante el Porfiriato?",
+                            options: ["El crecimiento industrial coexistió con jornadas extensas y bajos salarios", "Las mejoras salariales generalizadas provocaron el cierre de todas las fábricas", "La expansión industrial eliminó las desigualdades laborales", "El crecimiento industrial dio a los trabajadores el control de las empresas"],
+                            answerIndex: 0,
+                            explain: "La modernización económica coexistió con condiciones laborales precarias que alimentaron la protesta obrera."
                         }
                     ]
                 },
@@ -477,6 +512,13 @@ const concienciaHistoricaII = {
                             options: ["Partido Revolucionario Institucional", "Partido Liberal Mexicano", "Partido Nacional Revolucionario", "Partido de la Revolución Mexicana"],
                             answerIndex: 1,
                             explain: "Los trabajadores comenzaron a organizarse de la mano del Partido Liberal Mexicano, dirigido por los hermanos Enrique y Ricardo Flores Magón."
+                        },
+                        {
+                            topic: "Sufragio femenino",
+                            q: "¿Qué distingue los avances del sufragio femenino en México de 1947 y 1953?",
+                            options: ["En 1947 se reconoció en el ámbito federal y en 1953 se limitó al municipal", "En 1947 se reconoció en el ámbito municipal y en 1953 se reconoció en el federal", "En ambos años se reconoció únicamente en el ámbito municipal", "En ambos años se trató exclusivamente del ámbito federal"],
+                            answerIndex: 1,
+                            explain: "El reconocimiento municipal precedió al reconocimiento de los derechos políticos de las mujeres en las elecciones federales."
                         }
                     ]
                 }
@@ -559,6 +601,13 @@ const concienciaHistoricaII = {
                             options: ["Kerensky", "Lenin", "Stalin", "Nicolás II"],
                             answerIndex: 1,
                             explain: "Vladímir Ilich Uliánov, conocido como Lenin, organizó a los bolcheviques y lideró la Revolución de octubre de 1917, creando el primer estado socialista del mundo."
+                        },
+                        {
+                            topic: "Ferrocarriles y poder porfirista",
+                            q: "¿Cómo ayudó la expansión del ferrocarril a centralizar el poder durante el Porfiriato?",
+                            options: ["Permitió a cada región aislarse de las decisiones federales", "Reemplazó las autoridades federales por gobiernos ferroviarios", "Facilitó la comunicación y el traslado entre regiones y el centro del país", "Eliminó la participación de capital extranjero en el transporte"],
+                            answerIndex: 2,
+                            explain: "La red ferroviaria conectó regiones y facilitó el movimiento de personas, mercancías y recursos desde el centro."
                         }
                     ]
                 },
@@ -636,6 +685,13 @@ const concienciaHistoricaII = {
                             options: ["Adolfo de la Huerta", "Plutarco Elías Calles", "Pascual Ortiz Rubio", "Emilio Portes Gil"],
                             answerIndex: 0,
                             explain: "La rebelión delahuertista fue el levantamiento bajo la dirección de Adolfo de la Huerta en contra de Obregón y su sucesor Calles, durando seis meses."
+                        },
+                        {
+                            topic: "Revolución rusa",
+                            q: "¿Qué relación se establece entre la Primera Guerra Mundial y la crisis del zarismo ruso?",
+                            options: ["La guerra aseguró el abastecimiento y consolidó al zar", "La guerra estableció directamente una monarquía parlamentaria", "La guerra resolvió las tensiones entre el gobierno y los trabajadores", "La guerra agravó la escasez y el descontento social"],
+                            answerIndex: 3,
+                            explain: "La guerra profundizó los problemas económicos y sociales que precipitaron la caída del régimen zarista."
                         }
                     ]
                 },
@@ -713,6 +769,13 @@ const concienciaHistoricaII = {
                             options: ["1937", "1938", "1939", "1940"],
                             answerIndex: 2,
                             explain: "El Instituto Nacional de Antropología e Historia (INAH) fue fundado en 1939 durante el gobierno de Lázaro Cárdenas."
+                        },
+                        {
+                            topic: "Cardenismo",
+                            q: "¿Qué medida del cardenismo aplicó el principio de dominio nacional sobre los recursos del subsuelo?",
+                            options: ["La expropiación petrolera de 1938", "Los Tratados de Bucareli", "La fundación del Banco de México", "La expedición del Plan de San Luis"],
+                            answerIndex: 0,
+                            explain: "La expropiación petrolera se apoyó en el artículo 27 constitucional, que reconoce el dominio de la nación sobre los recursos del subsuelo."
                         }
                     ]
                 }

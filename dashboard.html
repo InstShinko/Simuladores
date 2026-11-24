@@ -61,25 +61,33 @@
                 <h1 id="materia-titulo">Titulo</h1>
                 <p class="sub" id="materia-descripcion">Actividad X</p>
                 <div class="meta">
-                    <span class="pill" id="modo-info">Modo: Práctica</span>
-                    <span class="pill" id="preguntas-info">Preguntas: 10</span>
-                    <span class="pill" id="banco-info">Duración: 30 min</span>
+                    <label class="pill" for="quizMode">Modo
+                        <select id="quizMode">
+                            <option value="practica">Práctica</option>
+                            <option value="examen">Examen</option>
+                        </select>
+                    </label>
+                    <span class="pill" id="preguntas-info">Preguntas: —</span>
                 </div>
                 <div class="row">
                     <div class="progress"><div class="bar" id="bar"></div></div>
-                    <div class="pill" id="counter">0 / 0</div>
+                    <div class="pill" id="counter" aria-live="polite"></div>
                 </div>
             </header>
 
             <div class="qhead">
-                <p class="qtitle" id="qtitle">Selecciona una actividad para comenzar</p>
+                <p class="qtitle" id="qtitle" tabindex="-1">Selecciona una actividad para comenzar</p>
                 <div class="options" id="options"></div>
-                <div class="feedback" id="feedback"></div>
+                <div class="feedback" id="feedback" role="status"></div>
+                <div class="question-nav" id="questionNav" hidden></div>
                 <div class="btns">
                     <button class="primary" id="startBtn" disabled>Iniciar actividad</button>
+                    <button id="prevBtn" hidden>Anterior</button>
                     <button id="checkBtn" disabled>Comprobar</button>
                     <button id="nextBtn" disabled>Siguiente</button>
-                    <button id="restartBtn" disabled>Reiniciar</button>
+                    <button id="submitBtn" hidden>Entregar examen</button>
+                    <button id="restartBtn" hidden>Reiniciar intento</button>
+                    <button id="retryBtn" hidden>Practicar mis errores</button>
                 </div>
             </div>
         </section>

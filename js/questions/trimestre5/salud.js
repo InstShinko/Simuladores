@@ -1,6 +1,6 @@
 // ============================================
 // CIENCIAS DE LA SALUD I
-// 9 ACTIVIDADES - 90 PREGUNTAS
+// 9 ACTIVIDADES - 10 PREGUNTAS POR INTENTO
 // ============================================
 
 const cienciasSaludI = {
@@ -86,6 +86,13 @@ const cienciasSaludI = {
                             options: ["En el estudio de los dientes", "En estudiar y tratar los factores que favorecen la propagación de enfermedades", "En el estudio de la mente", "En el desarrollo de medicamentos"],
                             answerIndex: 1,
                             explain: "La epidemiología se enfoca en estudiar y tratar los distintos factores que favorecen la propagación de enfermedades, desde ámbitos regionales hasta espacios que abarcan varias naciones."
+                        },
+                        {
+                            topic: "Disciplinas de la salud",
+                            q: "¿Qué disciplina se enfoca en la evaluación y atención de problemas psicológicos y emocionales?",
+                            options: ["Psicología clínica", "Odontología", "Nutrición", "Farmacología"],
+                            answerIndex: 0,
+                            explain: "La psicología clínica aborda el bienestar mental y emocional mediante la evaluación y la intervención psicológicas."
                         }
                     ]
                 },
@@ -163,6 +170,13 @@ const cienciasSaludI = {
                             options: ["Porque estudia el origen del hombre y sus creencias que pueden afectar la salud", "Porque estudia las leyes", "Porque analiza los alimentos", "Porque estudia los medicamentos"],
                             answerIndex: 0,
                             explain: "La antropología es el estudio del hombre y para realizar un diagnóstico se deben considerar las creencias que tiene la población, ya que de ahí pueden partir algunas actividades perjudiciales para el bienestar físico."
+                        },
+                        {
+                            topic: "Nutrición",
+                            q: "¿Qué disciplina estudia directamente la relación entre los alimentos y la salud?",
+                            options: ["Odontología", "Nutrición", "Farmacología", "Anatomía"],
+                            answerIndex: 1,
+                            explain: "La nutrición examina cómo la alimentación se relaciona con el funcionamiento del organismo y la salud."
                         }
                     ]
                 },
@@ -240,6 +254,13 @@ const cienciasSaludI = {
                             options: ["Porque es una etapa que marca la formación como adulto y el futuro profesional", "Porque es obligatorio", "Porque todos deben estudiar lo mismo", "Porque no hay otra opción"],
                             answerIndex: 0,
                             explain: "La elección de una carrera universitaria es una etapa importante en la vida ya que marca la formación como adultos y el futuro profesional, por lo que es importante tomar decisiones informadas y reflexionadas."
+                        },
+                        {
+                            topic: "Elección profesional",
+                            q: "Dos carreras de salud interesan por igual a una estudiante. ¿Qué le permitiría tomar una decisión más informada?",
+                            options: ["Elegir solo por la duración del programa", "Seguir la elección de sus amistades", "Comparar los planes de estudio, sus habilidades y las oportunidades laborales", "Guiarse únicamente por el nombre de la carrera"],
+                            answerIndex: 2,
+                            explain: "La decisión informada integra intereses y habilidades con datos sobre la formación y el campo de trabajo."
                         }
                     ]
                 }
@@ -322,6 +343,13 @@ const cienciasSaludI = {
                             options: ["Prevención terciaria", "Prevención secundaria", "Prevención primaria", "Rehabilitación"],
                             answerIndex: 2,
                             explain: "La prevención primaria se lleva a cabo en el periodo prepatogénico, donde las personas se encuentran sanas, realizando campañas de vacunación o promociones de la salud."
+                        },
+                        {
+                            topic: "Tríada ecológica",
+                            q: "En la tríada ecológica, ¿cómo se clasifica el entorno físico y social que rodea al huésped?",
+                            options: ["Agente", "Huésped", "Periodo patogénico", "Ambiente"],
+                            answerIndex: 3,
+                            explain: "El ambiente reúne las condiciones externas en las que interactúan el agente y el huésped."
                         }
                     ]
                 },
@@ -399,6 +427,13 @@ const cienciasSaludI = {
                             options: ["Porque son las etapas más cortas", "Porque en esas etapas se sientan las bases de lo que seremos como individuos", "Porque no tienen importancia", "Porque son las más fáciles"],
                             answerIndex: 1,
                             explain: "La infancia y la adolescencia son fundamentales ya que en esas etapas se sientan las bases de lo que seremos como individuos."
+                        },
+                        {
+                            topic: "Determinantes sociales",
+                            q: "¿Cuál situación ejemplifica un determinante social que dificulta el acceso a la atención de salud?",
+                            options: ["Vivir lejos de un centro de salud sin transporte accesible", "Tener un grupo sanguíneo poco frecuente", "Heredar un rasgo físico de un familiar", "Presentar una reacción inmunitaria"],
+                            answerIndex: 0,
+                            explain: "La ubicación de los servicios y el transporte son condiciones del entorno que influyen en el acceso efectivo."
                         }
                     ]
                 },
@@ -476,6 +511,13 @@ const cienciasSaludI = {
                             options: ["El biomédico es más moderno", "El biomédico se enfoca en la enfermedad; el biopsicosocial en la persona en su totalidad", "El biopsicosocial es más antiguo", "No hay diferencias significativas"],
                             answerIndex: 1,
                             explain: "El modelo biomédico se enfoca principalmente en la enfermedad y sus aspectos físicos, mientras que el biopsicosocial considera a la persona en su totalidad, integrando aspectos biológicos, psicológicos y sociales."
+                        },
+                        {
+                            topic: "Modelo biopsicosocial",
+                            q: "En una consulta, se consideran síntomas físicos, estrés y apoyo familiar. ¿Qué modelo ejemplifica esta evaluación?",
+                            options: ["Biomédico centrado en la lesión", "Biopsicosocial", "Anatómico centrado en los órganos", "Genético centrado en la herencia"],
+                            answerIndex: 1,
+                            explain: "El modelo biopsicosocial integra los factores biológicos, psicológicos y sociales."
                         }
                     ]
                 }
@@ -558,6 +600,13 @@ const cienciasSaludI = {
                             options: ["Reaccionar a las circunstancias", "Tomar la iniciativa y responsabilidad de hacer que las cosas sucedan, anticipándose a los problemas", "Esperar a que otros tomen la delantera", "No hacer nada"],
                             answerIndex: 1,
                             explain: "Ser proactivo significa tomar la iniciativa y la responsabilidad de hacer que las cosas sucedan, anticipándose a los problemas y tomando medidas para lograr las metas."
+                        },
+                        {
+                            topic: "Resiliencia",
+                            q: "Tras un contratiempo, una persona busca apoyo y reorganiza sus actividades para recuperarse. ¿Qué capacidad demuestra?",
+                            options: ["Aislamiento", "Negación", "Resiliencia", "Imitación"],
+                            answerIndex: 2,
+                            explain: "La resiliencia permite afrontar una dificultad, adaptarse y recuperarse."
                         }
                     ]
                 },
@@ -635,6 +684,13 @@ const cienciasSaludI = {
                             options: ["Solo descansar la mente", "Revitalizarse, renovarse, reponerse y relajarse, manteniendo en equilibrio los sistemas del cuerpo", "Solo descansar el cuerpo", "Solo soñar"],
                             answerIndex: 1,
                             explain: "El sueño permite al cuerpo revitalizarse, renovarse, reponerse y relajarse, manteniendo en equilibrio los sistemas inmunológico, cardiovascular, metabólico y neurológico."
+                        },
+                        {
+                            topic: "Autocuidado físico",
+                            q: "¿Qué función tiene el Plato del Bien Comer en el material de estudio?",
+                            options: ["Diagnosticar deficiencias nutricionales", "Clasificar las bebidas por su contenido de azúcar", "Medir el gasto energético individual", "Orientar la selección variada y equilibrada de alimentos"],
+                            answerIndex: 3,
+                            explain: "Es una guía alimentaria que representa grupos de alimentos para orientar su combinación."
                         }
                     ]
                 },
@@ -712,6 +768,13 @@ const cienciasSaludI = {
                             options: ["Íntimas, relacionales y colectivas", "Solo familiares", "Solo amistades", "Solo laborales"],
                             answerIndex: 0,
                             explain: "Los tipos de conexiones sociales son: íntimas (familiares), relacionales (compañeros) y colectivas (personas con aficiones o ideologías compartidas)."
+                        },
+                        {
+                            topic: "Relaciones y autocuidado emocional",
+                            q: "¿Qué acción fortalece una red de apoyo ante la soledad?",
+                            options: ["Buscar contacto significativo con personas de confianza", "Sustituir todas las conversaciones por actividades individuales", "Evitar hablar de las necesidades emocionales", "Esperar a que las demás personas adivinen lo que ocurre"],
+                            answerIndex: 0,
+                            explain: "Las relaciones de apoyo favorecen la conexión social y permiten expresar necesidades."
                         }
                     ]
                 }

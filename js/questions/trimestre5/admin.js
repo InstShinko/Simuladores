@@ -1,6 +1,6 @@
 // ============================================
 // ADMINISTRACIÓN I
-// 9 ACTIVIDADES - 90 PREGUNTAS
+// 9 ACTIVIDADES - 10 PREGUNTAS POR INTENTO
 // ============================================
 
 const administracionI = {
@@ -86,6 +86,13 @@ const administracionI = {
                             options: ["Porque es abundante", "Porque es escaso y posee sentimientos y valores propios", "Porque no es importante", "Porque es fácil de reemplazar"],
                             answerIndex: 1,
                             explain: "El recurso humano es escaso y debe ser de mano de obra calificada, posee sentimientos y valores propios, y debe tratarse adecuadamente para desarrollar mayor creatividad y productividad."
+                        },
+                        {
+                            topic: "Administración aplicada",
+                            q: "Una cooperativa fija una meta, reparte tareas y revisa los resultados. ¿Qué idea ilustra el caso?",
+                            options: ["La coordinación de esfuerzos y recursos para alcanzar un objetivo", "La sustitución del trabajo colectivo por decisiones individuales", "La medición de resultados como única tarea administrativa", "El uso de técnicas contables como fin de la administración"],
+                            answerIndex: 0,
+                            explain: "La administración coordina a las personas y los recursos para lograr objetivos comunes."
                         }
                     ]
                 },
@@ -163,6 +170,13 @@ const administracionI = {
                             options: ["Todos tienen el mismo nivel", "Existe un orden de rangos en la organización", "No hay niveles", "Solo hay un nivel"],
                             answerIndex: 1,
                             explain: "El proceso administrativo es jerárquico porque existe un orden de rangos en la organización, de la alta gerencia al nivel más bajo."
+                        },
+                        {
+                            topic: "Unidad temporal",
+                            q: "Una empresa sigue organizando recursos mientras revisa resultados y ajusta sus planes. ¿Qué característica ilustra?",
+                            options: ["Valor instrumental", "Unidad temporal", "Especificidad", "Amplitud de ejercicio"],
+                            answerIndex: 1,
+                            explain: "Las etapas del proceso administrativo se relacionan y pueden coexistir en la práctica."
                         }
                     ]
                 },
@@ -240,6 +254,13 @@ const administracionI = {
                             options: ["Especificidad", "Universalidad", "Valor instrumental", "Amplitud de ejercicio"],
                             answerIndex: 1,
                             explain: "La universalidad de la administración permite su aplicación en todos los ámbitos, desde el sector público hasta la vida cotidiana."
+                        },
+                        {
+                            topic: "Disciplinas auxiliares",
+                            q: "¿Qué disciplina auxiliar ayuda a una organización a entender la motivación y la conducta individual de su personal?",
+                            options: ["Derecho", "Contabilidad", "Psicología", "Economía"],
+                            answerIndex: 2,
+                            explain: "La psicología aporta conocimientos sobre el comportamiento y la motivación de las personas."
                         }
                     ]
                 }
@@ -322,11 +343,18 @@ const administracionI = {
                             options: ["La producción", "La organización", "Las ventas", "El marketing"],
                             answerIndex: 1,
                             explain: "La organización es la base principal de las instituciones u organizaciones, pues con ella se ejerce el funcionamiento eficiente de los recursos."
+                        },
+                        {
+                            topic: "Planeación y organización",
+                            q: "Un equipo fija una meta de entrega y luego asigna responsables a cada tarea. ¿A qué etapa corresponde la segunda acción?",
+                            options: ["Planeación", "Dirección", "Control", "Organización"],
+                            answerIndex: 3,
+                            explain: "Asignar funciones y responsabilidades forma parte de estructurar el trabajo."
                         }
                     ]
                 },
                 act2: {
-                    nombre: "Actividad 2: Dirección y Control en la Administración",
+                    nombre: "Actividad 2: Interrelación entre Planeación y Organización",
                     desc: "Comprensión de la interrelación entre planeación y organización, así como de los fundamentos de la planeación y los elementos de la organización.",
                     preguntas: 10,
                     banco: [
@@ -399,6 +427,13 @@ const administracionI = {
                             options: ["La duplicación de esfuerzos", "La comunicación", "La coordinación", "La planeación"],
                             answerIndex: 0,
                             explain: "La organización elimina por completo la duplicación de esfuerzos al delimitar funciones y responsabilidades."
+                        },
+                        {
+                            topic: "Interrelación entre planeación y organización",
+                            q: "Una empresa cambia su meta de atender solo en tienda a incluir pedidos en línea. ¿Qué ajuste vincula la planeación con la organización?",
+                            options: ["Asignar responsables y recursos al nuevo canal", "Mantener la misma distribución de tareas sin revisarla", "Evaluar al equipo con el objetivo anterior", "Registrar los resultados del periodo anterior"],
+                            answerIndex: 0,
+                            explain: "La organización adapta los recursos y las responsabilidades para ejecutar la nueva meta fijada en la planeación."
                         }
                     ]
                 },
@@ -476,6 +511,13 @@ const administracionI = {
                             options: ["Un marco sólido para la gestión efectiva de las organizaciones", "Solo planeación", "Solo control", "Solo organización"],
                             answerIndex: 0,
                             explain: "El proceso administrativo proporciona un marco sólido para la gestión efectiva de las organizaciones, permitiendo optimizar recursos, aumentar la productividad y alcanzar objetivos."
+                        },
+                        {
+                            topic: "Control administrativo",
+                            q: "Un equipo detecta que sus entregas tardan más que lo previsto y modifica el procedimiento. ¿Qué etapa aplica al comparar y corregir?",
+                            options: ["Planeación", "Control", "Organización", "Dirección"],
+                            answerIndex: 1,
+                            explain: "El control compara el desempeño con lo previsto e impulsa correcciones ante desviaciones."
                         }
                     ]
                 }
@@ -558,6 +600,13 @@ const administracionI = {
                             options: ["Cada empleado debe recibir instrucciones de una sola persona", "Los empleados deben recibir instrucciones de varias personas", "No hay jerarquía", "Todos mandan"],
                             answerIndex: 0,
                             explain: "El principio de unidad de mando establece que cada empleado debe recibir instrucciones de una sola persona."
+                        },
+                        {
+                            topic: "Principios de Fayol",
+                            q: "Dos jefaturas dan órdenes incompatibles al mismo empleado. ¿Qué principio ayudaría a prevenir este problema?",
+                            options: ["División del trabajo", "Equidad", "Unidad de mando", "Centralización"],
+                            answerIndex: 2,
+                            explain: "La unidad de mando establece que cada empleado recibe instrucciones de un solo superior."
                         }
                     ]
                 },
@@ -635,6 +684,13 @@ const administracionI = {
                             options: ["Mayo se enfocaba en métodos rigurosos, Taylor en relaciones humanas", "Mayo se enfocaba en relaciones humanas, Taylor en métodos rigurosos", "Ambos se enfocaban en lo mismo", "No tenían diferencias"],
                             answerIndex: 1,
                             explain: "Elton Mayo se enfocaba en las relaciones humanas y establecía al individuo como ser humano con sentimientos, mientras que Taylor se enfocaba en métodos rigurosos."
+                        },
+                        {
+                            topic: "Desarrollo organizacional",
+                            q: "¿Qué acción refleja la participación en un proceso de desarrollo organizacional?",
+                            options: ["Dejar todo el diagnóstico a un equipo externo", "Comunicar el cambio después de ponerlo en marcha", "Medir únicamente los resultados financieros al final", "Involucrar al personal en el diagnóstico y en el diseño de cambios"],
+                            answerIndex: 3,
+                            explain: "La participación incorpora a quienes integran la organización en el proceso de cambio planeado."
                         }
                     ]
                 },
@@ -712,6 +768,13 @@ const administracionI = {
                             options: ["Impulso al talento humano", "Tecnología de vanguardia", "Competitividad sostenible", "Outsourcing"],
                             answerIndex: 0,
                             explain: "El impulso al talento humano es un enfoque actual que se centra en el desarrollo y potenciación de las personas como recurso clave para la organización."
+                        },
+                        {
+                            topic: "Calidad total",
+                            q: "¿Qué iniciativa corresponde a un enfoque de calidad total?",
+                            options: ["Revisar y mejorar continuamente los procesos con participación del personal", "Limitar la mejora a la inspección del producto terminado", "Aumentar la producción manteniendo los defectos actuales", "Delegar toda decisión de calidad al área de ventas"],
+                            answerIndex: 0,
+                            explain: "La calidad total busca mejoras continuas en los procesos y requiere participación de toda la organización."
                         }
                     ]
                 }

@@ -1,6 +1,6 @@
 // ============================================
 // DERECHO I
-// 9 ACTIVIDADES - 90 PREGUNTAS
+// 9 ACTIVIDADES - 10 PREGUNTAS POR INTENTO
 // ============================================
 
 const derechoI = {
@@ -86,6 +86,13 @@ const derechoI = {
                             options: ["Castigar a los delincuentes", "Lograr que los individuos se desarrollen de manera armónica y resolver conflictos con justicia y equidad", "Crear riqueza para el Estado", "Controlar a la población"],
                             answerIndex: 1,
                             explain: "El sentido e importancia del Derecho es lograr que los individuos se desarrollen de manera armónica y si tienen conflicto se resuelva con justicia y equidad al normar los vínculos como la convivencia y la supervivencia del grupo social."
+                        },
+                        {
+                            topic: "Derecho objetivo y subjetivo",
+                            q: "Una norma reconoce una facultad y la persona titular la ejerce. ¿Qué acepción corresponde a esa facultad?",
+                            options: ["Derecho subjetivo", "Derecho objetivo", "Derecho adjetivo", "Derecho histórico"],
+                            answerIndex: 0,
+                            explain: "El derecho subjetivo es la facultad reconocida a una persona por las normas del derecho objetivo."
                         }
                     ]
                 },
@@ -163,6 +170,13 @@ const derechoI = {
                             options: ["Son autónomas", "Son coercibles", "Son interiores", "Son unilaterales"],
                             answerIndex: 1,
                             explain: "Las normas jurídicas son coercibles; si el hombre no cumple con la norma, tendrá una sanción impuesta por el Estado aún en contra de su voluntad."
+                        },
+                        {
+                            topic: "Normas de conducta",
+                            q: "Una norma impone un deber a una persona y faculta a otra a exigir su cumplimiento. ¿Qué característica describe?",
+                            options: ["Autonomía", "Bilateralidad", "Interioridad", "Incoercibilidad"],
+                            answerIndex: 1,
+                            explain: "La bilateralidad relaciona la obligación de una parte con la facultad de la otra para exigir su cumplimiento."
                         }
                     ]
                 },
@@ -240,6 +254,13 @@ const derechoI = {
                             options: ["Los derechos de los animales", "Los comportamientos humanos que puedan alterar directa o indirectamente al medio ambiente", "Las relaciones entre Estados", "Los contratos comerciales"],
                             answerIndex: 1,
                             explain: "El derecho ambiental regula los comportamientos humanos que puedan alterar directa o indirectamente al medio ambiente, para prevenir y solucionar los problemas que alteran su equilibrio."
+                        },
+                        {
+                            topic: "Fuentes del derecho",
+                            q: "Si una transformación social motiva la creación de una norma, ¿qué clase de fuente representa la transformación?",
+                            options: ["Fuente formal", "Fuente histórica", "Fuente real", "Fuente doctrinal"],
+                            answerIndex: 2,
+                            explain: "Las fuentes reales son hechos o condiciones sociales que motivan el contenido de las normas."
                         }
                     ]
                 }
@@ -322,6 +343,13 @@ const derechoI = {
                             options: ["El gobierno ejercido por un rey por herencia", "El gobierno ejercido por un tirano que obtiene el poder contra derecho y lo rige sin justicia", "El gobierno donde el pueblo elige a sus representantes", "El gobierno donde el parlamento es el poder supremo"],
                             answerIndex: 1,
                             explain: "La tiranía es el gobierno ejercido por un tirano, una persona que obtiene contra derecho el poder de un Estado, especialmente si lo rige sin justicia y a medida de su voluntad."
+                        },
+                        {
+                            topic: "Formas de Estado",
+                            q: "¿Qué rasgo distingue al Estado federal del Estado unitario según el material?",
+                            options: ["Las autoridades territoriales son delegaciones del gobierno central", "El territorio se administra exclusivamente desde un gobierno local", "Las entidades federadas actúan como países independientes", "Las entidades federadas tienen autonomía en su régimen interior"],
+                            answerIndex: 3,
+                            explain: "En el Estado federal, las entidades federadas cuentan con autonomía interna y forman parte de una federación."
                         }
                     ]
                 },
@@ -399,6 +427,13 @@ const derechoI = {
                             options: ["Todo lo que quiera", "Solo aquello que el derecho no le prohíba", "Solo lo que la autoridad le ordene", "Nada sin permiso"],
                             answerIndex: 1,
                             explain: "En el Estado de Derecho, el individuo solo podrá hacer aquello que el derecho no le prohíba."
+                        },
+                        {
+                            topic: "Características de la ley",
+                            q: "Una ley formula una regla para cualquier persona que se encuentre en una situación prevista, sin identificar a alguien por su nombre. ¿Qué característica destaca la ausencia de destinatarios identificados?",
+                            options: ["Impersonalidad", "Permanencia", "Obligatoriedad", "Coercibilidad"],
+                            answerIndex: 0,
+                            explain: "Una ley impersonal formula sus destinatarios sin designar a individuos determinados."
                         }
                     ]
                 },
@@ -471,11 +506,11 @@ const derechoI = {
                             explain: "El Presidente de la República durará en el encargo seis años, según el artículo 80 de la Constitución."
                         },
                         {
-                            topic: "Poder Judicial",
-                            q: "¿Cuántos ministros integran la Suprema Corte de Justicia de la Nación?",
-                            options: ["9", "10", "11", "12"],
-                            answerIndex: 2,
-                            explain: "La Suprema Corte de Justicia de la Nación está integrada por 11 ministros y funciona en Pleno o en Salas."
+                            topic: "División de poderes",
+                            q: "¿Qué poder resuelve controversias mediante la aplicación e interpretación de las normas jurídicas?",
+                            options: ["Legislativo", "Judicial", "Ejecutivo", "Constituyente"],
+                            answerIndex: 1,
+                            explain: "El Poder Judicial ejerce la función jurisdiccional y resuelve controversias conforme al orden jurídico."
                         }
                     ]
                 }
@@ -558,6 +593,13 @@ const derechoI = {
                             options: ["Artículo 4", "Artículo 5", "Artículo 6", "Artículo 7"],
                             answerIndex: 2,
                             explain: "El artículo 6 de la Constitución establece que las personas tienen la libertad de expresar sus ideas, siempre y cuando no ataque la moral, los derechos de terceros o perturbe el orden público."
+                        },
+                        {
+                            topic: "Estructura constitucional",
+                            q: "¿En qué parte de la Constitución se estudia la organización y las atribuciones de los poderes públicos?",
+                            options: ["La parte dogmática", "Los artículos transitorios como conjunto", "La parte orgánica", "El apartado dedicado exclusivamente a los derechos humanos"],
+                            answerIndex: 2,
+                            explain: "La parte orgánica establece la estructura y las funciones de los órganos del Estado."
                         }
                     ]
                 },
@@ -635,6 +677,13 @@ const derechoI = {
                             options: ["Artículo 14", "Artículo 16", "Artículo 22", "Artículo 20"],
                             answerIndex: 0,
                             explain: "El artículo 14 de la Constitución establece que nadie podrá ser privado de la libertad o de sus posesiones o derechos, sino mediante juicio seguido ante los tribunales previamente establecidos."
+                        },
+                        {
+                            topic: "Principios de los derechos humanos",
+                            q: "Si la vulneración del derecho a la educación dificulta el ejercicio de otros derechos, ¿qué principio ejemplifica?",
+                            options: ["Universalidad", "Progresividad", "Generalidad", "Interdependencia"],
+                            answerIndex: 3,
+                            explain: "La interdependencia señala que los derechos se relacionan y que el ejercicio de uno puede influir en el de otros."
                         }
                     ]
                 },
@@ -694,10 +743,10 @@ const derechoI = {
                         },
                         {
                             topic: "Tratados Internacionales",
-                            q: "¿Qué lugar ocupan los tratados internacionales en la jerarquía de las leyes en México?",
-                            options: ["Debajo de las Constituciones locales", "Al mismo nivel que la Constitución Federal", "Debajo de los reglamentos", "En el último nivel"],
+                            q: "Según el artículo 133 citado en el material, ¿quién aprueba los tratados celebrados por el presidente?",
+                            options: ["La Cámara de Diputados", "El Senado", "Los ayuntamientos", "La Suprema Corte"],
                             answerIndex: 1,
-                            explain: "Los tratados internacionales que estén de acuerdo con la Constitución, celebrados por el Presidente y aprobados por el Senado, son Ley Suprema al mismo nivel que la Constitución Federal."
+                            explain: "El artículo 133 señala que los tratados deben estar de acuerdo con la Constitución y que los celebra el presidente con aprobación del Senado."
                         },
                         {
                             topic: "Artículo 115 Constitucional",
@@ -712,6 +761,13 @@ const derechoI = {
                             options: ["En una línea horizontal", "En una pirámide con la Constitución en la cima", "En un círculo", "En una tabla"],
                             answerIndex: 1,
                             explain: "La jerarquización de las leyes en México se observa en una pirámide, donde la Constitución se encuentra en la cima como la ley suprema."
+                        },
+                        {
+                            topic: "Jerarquía normativa",
+                            q: "¿Qué relación debe guardar un reglamento con la ley que desarrolla?",
+                            options: ["Debe ajustarse a la ley y facilitar su aplicación", "Puede reemplazar la ley si es posterior", "Tiene la misma jerarquía que la Constitución", "Puede cambiar el contenido de la ley sin reforma legislativa"],
+                            answerIndex: 0,
+                            explain: "El reglamento desarrolla disposiciones de la ley dentro de los límites que esta y la Constitución establecen."
                         }
                     ]
                 }
